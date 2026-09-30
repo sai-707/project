@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="#top" class="home-icon">
+        <span class="top-left-name">Alex Morgan</span>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#projects">Project Details</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="profile-section">
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+    <h1 class="profile-name">Alex Morgan</h1>
+    <p class="profile-summary">
+      Hi! I am Alex Morgan, a passionate Full-Stack Developer specializing in modern web applications. 
+      I build scalable, user-centric solutions using JavaScript, React, and cloud architectures.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo">
+        <span>HTML5</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo">
+        <span>CSS3</span>
+      </div>
+      <!-- 3 New Skills -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+        <span>React</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo">
+        <span>Node.js</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- 3 New Projects -->
+      <div class="project-card">
+        <h3>E-Commerce Dashboard Analytics</h3>
+        <p>A real-time metrics visualizer built with React and D3.js to process store transactions.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Task Management App</h3>
+        <p>An intelligent productivity tool that prioritizes daily tasks using machine learning models.</p>
+      </div>
+      <div class="project-card">
+        <h3>Smart Weather & Air Quality API</h3>
+        <p>A responsive application providing live geolocation-based climate forecasts and air telemetry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="recommendations-section">
+    <h2>Recommendations</h2>
+    <div id="all_recommendations" class="recommendations-container">
+      <!-- 3 New Recommendations -->
+      <div class="recommendation">
+        <p>"Alex is a standout developer who delivers clean, well-structured code on tight deadlines."</p>
+        <span>- Sarah Jenkins, Senior Tech Lead</span>
+      </div>
+      <div class="recommendation">
+        <p>"Working with Alex on our backend service architecture was an absolute pleasure. Highly skilled!"</p>
+        <span>- Marcus Vance, Product Manager</span>
+      </div>
+      <div class="recommendation">
+        <p>"Alex brings exceptional problem-solving abilities and great teamwork to every sprint."</p>
+        <span>- Elena Rostova, UX Director</span>
+      </div>
+    </div>
+
+    <!-- Form to add recommendations -->
+    <div class="add-recommendation">
+      <h3>Leave a Recommendation</h3>
+      <input type="text" id="new_recommendation_name" placeholder="Your Name (Optional)"><br><br>
+      <textarea id="new_recommendation_text" placeholder="Write your recommendation here..."></textarea><br>
+      <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+    </div>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Thank you for submitting a recommendation!</p>
+      <button onclick="showPopup(false)">OK</button>
+    </div>
+  </div>
+</body>
+</html>
