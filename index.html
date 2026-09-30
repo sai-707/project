@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Morgan - Portfolio</title>
+  <title>Sai Daswadkar - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body id="top">
+<body>
+  <!-- Home Anchor Target -->
+  <div id="home"></div>
+
   <!-- Navigation Bar -->
-  <nav class="navbar">
+  <nav class="topmenu">
     <div class="nav-brand">
-      <a href="#top" class="home-icon">
-        <span class="top-left-name">Alex Morgan</span>
+      <a href="#home" class="iconbutton">
+        <span class="top-left-name">Sai Daswadkar</span>
       </a>
     </div>
-    <ul class="nav-links">
+    <ul>
       <li><a href="#about-me">About Me</a></li>
       <li><a href="#projects">Project Details</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -26,9 +29,9 @@
   <!-- About Me Section -->
   <section id="about-me" class="profile-section">
     <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-    <h1 class="profile-name">Alex Morgan</h1>
+    <div class="profile_name">Sai Daswadkar</div>
     <p class="profile-summary">
-      Hi! I am Alex Morgan, a passionate Full-Stack Developer specializing in modern web applications. 
+      Hi! I am Sai Daswadkar, a passionate Full-Stack Developer specializing in modern web applications. 
       I build scalable, user-centric solutions using JavaScript, React, and cloud architectures.
     </p>
   </section>
@@ -45,7 +48,6 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo">
         <span>CSS3</span>
       </div>
-      <!-- 3 New Skills -->
       <div class="skill-card">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
         <span>JavaScript</span>
@@ -65,7 +67,6 @@
   <section id="projects" class="projects-section">
     <h2>Projects</h2>
     <div class="projects-container">
-      <!-- 3 New Projects -->
       <div class="project-card">
         <h3>E-Commerce Dashboard Analytics</h3>
         <p>A real-time metrics visualizer built with React and D3.js to process store transactions.</p>
@@ -85,22 +86,21 @@
   <section id="recommendations" class="recommendations-section">
     <h2>Recommendations</h2>
     <div id="all_recommendations" class="recommendations-container">
-      <!-- 3 New Recommendations -->
       <div class="recommendation">
-        <p>"Alex is a standout developer who delivers clean, well-structured code on tight deadlines."</p>
-        <span>- Sarah Jenkins, Senior Tech Lead</span>
+        <p>"An outstanding software engineer who consistently delivers clean, efficient, and well-documented code on tight schedules."</p>
+        <span>- Senior Tech Lead</span>
       </div>
       <div class="recommendation">
-        <p>"Working with Alex on our backend service architecture was an absolute pleasure. Highly skilled!"</p>
-        <span>- Marcus Vance, Product Manager</span>
+        <p>"Working together on our backend microservices was an exceptional experience. A true asset to any technical team!"</p>
+        <span>- Product Manager</span>
       </div>
       <div class="recommendation">
-        <p>"Alex brings exceptional problem-solving abilities and great teamwork to every sprint."</p>
-        <span>- Elena Rostova, UX Director</span>
+        <p>"Brings impressive problem-solving capabilities, rapid prototyping skills, and stellar teamwork to every sprint."</p>
+        <span>- UX Director</span>
       </div>
     </div>
 
-    <!-- Form to add recommendations -->
+    <!-- Recommendation Submission Form -->
     <div class="add-recommendation">
       <h3>Leave a Recommendation</h3>
       <input type="text" id="new_recommendation_name" placeholder="Your Name (Optional)"><br><br>
